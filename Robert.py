@@ -9,7 +9,7 @@ import google as g
 engine = p.init('sapi5')
 voices = engine.getProperty('voices')
 
-voices = engine.setProperty('voice', voices[0].id)
+voices = engine.setProperty('voice', voices[1].id)
 def say(audio):
     engine.say(audio)
     engine.runAndWait()
